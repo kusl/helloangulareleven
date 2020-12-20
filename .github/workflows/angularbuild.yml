@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: yarn and build
+    - name: yarn and ng build
       run: |
         yarn
         npm run ng build 
