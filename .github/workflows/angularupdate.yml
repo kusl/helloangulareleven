@@ -23,9 +23,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g yarn
+      if: always()
     - run: yarn install --frozen-lockfile
+      if: always()
     - run: yarn run ng update;
+      if: always()
     - run: yarn run ng update @angular/core @angular/cli @angular/cdk @angular/material @angular/localize rxjs;
+      if: always()
     - run: git config user.name "Kushal Hada";
       if: always()
     - run: git config user.email "kus@tilde.team";
