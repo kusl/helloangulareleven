@@ -20,7 +20,8 @@ jobs:
     - name: yarn and ng build
       run: |
         yarn
-        npm run ng build 
+        npm run ng build --prod
+        du -sh dist
       env:
         CI: true
       working-directory: .
