@@ -9,11 +9,13 @@ import { environment } from '../environments/environment';
 
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
