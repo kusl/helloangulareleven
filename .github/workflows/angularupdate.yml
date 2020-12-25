@@ -42,4 +42,3 @@ jobs:
       if: always()
     - run: git push origin master;
       if: always()
-
