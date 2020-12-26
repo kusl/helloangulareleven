@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { LoadingComponent } from './loading/loading.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LoadingComponent } from './loading/loading.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
