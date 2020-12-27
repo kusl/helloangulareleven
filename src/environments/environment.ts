@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   loadEveryNSeconds: 3,
   hardReloadEveryNSeconds: 60,
+  baseUrl: 'http://192.168.1.59:7072/api'
 };
 
 /*

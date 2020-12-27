@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, interval, Observable, Subscription } from 'rxjs';
+
 import { Client } from './client';
 import { LoadingService } from './loading.service';
 
@@ -28,17 +29,17 @@ export class GetClientsService {
     } as Client;
     return [ dummyClient ];
   }
-  jsonUrl: string = 'http://192.168.1.59:7070/api/getclients';
-  getClients(jsonUrl: string = this.jsonUrl): void {
-    const myObservable = this.http.get(jsonUrl) as Observable<Client[]>;
+  jsonUrl: string = `getclients`;
+  getClients(baseUrl: string, jsonUrl: string = this.jsonUrl): void {
+    const myObservable = this.http.get(`${baseUrl}/${jsonUrl}`) as Observable<Client[]>;
     this.loadingService.showLoaderUntilCompleted(myObservable).subscribe((response: Client[]) => {
       this.myBehaviorSubject.next(response);
     });
   }
-  reloadData(loadEveryNSeconds: number): void {
+  reloadData(baseUrl: string, loadEveryNSeconds: number): void {
     const source = interval(loadEveryNSeconds * 1000);
     this.subscription = source.subscribe((val: number) => {
-      this.getClients();
+      this.getClients(baseUrl);
     });
   }
 }

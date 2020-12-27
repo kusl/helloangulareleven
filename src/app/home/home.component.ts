@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { Client } from '../client';
 import { GetClientsService } from '../get-clients.service';
 
@@ -16,11 +17,12 @@ export class HomeComponent implements OnInit {
     this.clients = [];
   }
   ngOnInit(): void {
-    this.getClientsService.getClients();
     this.getClients();
+    this.getClientsService.reloadData(environment.baseUrl, environment.loadEveryNSeconds);
   }
   getClients(): void {
     this.getClientsService.myObservable$.subscribe((response) => {
+      console.log({ response });
       this.clients = response;
     });
   }
