@@ -16,7 +16,7 @@ export class GetClientsService {
   constructor(
     private http: HttpClient,
     private loadingService: LoadingService
-  ) { 
+  ) {
     const dummyData = this.createDummyData();
     this.myBehaviorSubject = new BehaviorSubject<Client[]>(dummyData);
     this.myObservable$ = this.myBehaviorSubject as Observable<Client[]>;
@@ -24,7 +24,7 @@ export class GetClientsService {
   createDummyData() {
     const dummyClient = {
       Id: "19e57992-e27a-48c5-87d3-a577ef032928",
-      ClientName: "Personal Touch", 
+      ClientName: "Personal Touch",
       image: "images/BEBCapital.png"
     } as Client;
     return [ dummyClient ];
