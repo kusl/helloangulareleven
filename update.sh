@@ -75,8 +75,8 @@ date >> README.md;
 time yarn version --patch >> README.md;
 git add .;
 git commit -m "add timestamp";
-# git pull --rebase origin master --strategy-option=ours;
-# git add .;
-# git commit -m "merge from remote";
-# git push origin master;
+git pull --rebase origin master --strategy-option=ours;
+git add .;
+git commit -m "merge from remote";
+git push origin master;
 
