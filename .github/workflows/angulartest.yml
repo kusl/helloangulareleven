@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout
     - uses: actions@setup-node
       with:
-        node-version: lts/*
+        node-version: 'lts/*'
     - name: yarn and ng test
       run: |
         yarn

@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout
     - uses: actions@setup-node
       with:
-        node-version: lts/*
+        node-version: 'lts/*'
     - run: npm install -g yarn
       if: always()
     - run: yarn install --frozen-lockfile
