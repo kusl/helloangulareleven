@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout
+    - uses: actions@setup-node
+      with:
+        node-version: lts/*
     - name: yarn and ng build
       run: |
         yarn
