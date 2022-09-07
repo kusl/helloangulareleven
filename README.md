@@ -31,3 +31,8 @@ yarn run v1.22.19
 $ ng build --configuration production
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+Wed Sep  7 11:54:50 AM MDT 2022
+yarn version v1.22.19
+info Current version: 0.0.8
+info New version: 0.0.9
+Done in 0.23s.
