@@ -30,3 +30,7 @@ success Saved lockfile.
 Done in 31.89s.
 ```
 ```bash
+yarn run v1.22.19
+$ ng build --configuration production
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
