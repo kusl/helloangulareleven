@@ -32,3 +32,4 @@ info There appears to be trouble with your network connection. Retrying...
 success Already up-to-date.
 Done in 212.31s.
 ```
+```bash
