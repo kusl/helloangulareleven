@@ -28,3 +28,7 @@ info There appears to be trouble with your network connection. Retrying...
 info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
 ```
 ```bash
+yarn run v1.22.19
+$ ng build --configuration production
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
