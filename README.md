@@ -56,3 +56,58 @@ yarn install v1.22.19
 success Already up-to-date.
 Done in 0.91s.
 ```
+```bash
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+Current version: 1.0.30001168
+New version:     1.0.30001434
+Removing old caniuse-lite from lock file
+Installing new caniuse-lite version
+$ yarn add -W caniuse-lite
+warning " > @angular-devkit/build-angular@0.1102.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning "@angular-devkit/build-angular > @ngtools/webpack@11.2.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning " > @angular/compiler-cli@11.2.11" has incorrect peer dependency "typescript@>=4.0 <4.2".
+Cleaning package.json dependencies from caniuse-lite
+$ yarn remove -W caniuse-lite
+warning " > @angular-devkit/build-angular@0.1102.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning "@angular-devkit/build-angular > @ngtools/webpack@11.2.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning " > @angular/compiler-cli@11.2.11" has incorrect peer dependency "typescript@>=4.0 <4.2".
+caniuse-lite has been successfully updated
+
+Target browser changes:
+- chrome 87
++ chrome 107
+- edge 87
+- edge 86
++ edge 107
++ edge 106
+- firefox 84
++ firefox 107
+- ios_saf 14.0-14.3
+- ios_saf 13.4-13.7
+- ios_saf 13.3
+- ios_saf 13.2
+- ios_saf 13.0-13.1
++ ios_saf 16.1
++ ios_saf 16.0
++ ios_saf 15.6
++ ios_saf 15.5
++ ios_saf 15.4
++ ios_saf 15.2-15.3
++ ios_saf 15.0-15.1
+- safari 14
+- safari 13.1
+- safari 13
++ safari 16.1
++ safari 16.0
++ safari 15.6
++ safari 15.5
++ safari 15.4
++ safari 15.2-15.3
++ safari 15.1
++ safari 15
+```
+```bash
