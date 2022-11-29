@@ -121,3 +121,9 @@ See "/tmp/ng-0n1BaK/angular-errors.log" for further details.
 error Command failed with exit code 127.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+Tue Nov 29 09:07:42 AM MST 2022
+Tue Nov 29 09:08:01 AM MST 2022
+yarn version v1.22.19
+info Current version: 0.0.88
+info New version: 0.0.89
+Done in 0.20s.
