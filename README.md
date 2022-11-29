@@ -111,3 +111,13 @@ Target browser changes:
 + safari 15
 ```
 ```bash
+yarn run v1.22.19
+$ ng build --configuration production
+Warning: Using differential loading with targets ES5 and ES2016 or higher may
+cause problems. Browsers with support for ES2015 will load the ES2016+ scripts
+referenced with script[type="module"] but they may not support ES2016+ syntax.
+An unhandled exception occurred: The 'buildOptimizer' option cannot be used without 'aot'.
+See "/tmp/ng-0n1BaK/angular-errors.log" for further details.
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
