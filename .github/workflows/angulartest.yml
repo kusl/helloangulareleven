@@ -9,13 +9,13 @@ jobs:
 
     steps:
     - uses: actions/checkout
-    - uses: actions@setup-node
+    - uses: actions/setup-node
       with:
         node-version: 'lts/*'
     - name: yarn and ng test
       run: |
         yarn
-        npm run ng test 
+        npm run ng test
       env:
         CI: true
       working-directory: .
