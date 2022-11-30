@@ -56,3 +56,22 @@ yarn install v1.22.19
 success Already up-to-date.
 Done in 0.96s.
 ```
+```bash
+Current version: 1.0.30001434
+New version:     1.0.30001434
+Removing old caniuse-lite from lock file
+Installing new caniuse-lite version
+$ yarn add -W caniuse-lite
+warning " > @angular-devkit/build-angular@0.1102.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning "@angular-devkit/build-angular > @ngtools/webpack@11.2.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning " > @angular/compiler-cli@11.2.11" has incorrect peer dependency "typescript@>=4.0 <4.2".
+Cleaning package.json dependencies from caniuse-lite
+$ yarn remove -W caniuse-lite
+warning " > @angular-devkit/build-angular@0.1102.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning "@angular-devkit/build-angular > @ngtools/webpack@11.2.9" has incorrect peer dependency "typescript@~4.0.0 || ~4.1.0".
+warning " > @angular/compiler-cli@11.2.11" has incorrect peer dependency "typescript@>=4.0 <4.2".
+caniuse-lite has been successfully updated
+
+No target browser changes
+```
+```bash
