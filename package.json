@@ -1,6 +1,6 @@
 {
   "name": "hello-angular-eleven",
-  "version": "0.0.102",
+  "version": "0.0.103",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0 --disableHostCheck",
